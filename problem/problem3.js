@@ -8,15 +8,23 @@ const problem3 = (inventory) => {
         carModel.push(model)
     }
 
-    const sortedData = carModel.sort((firstStr, secondStr) => {
-        if (firstStr > secondStr) { return 1 }
-        else if (firstStr < secondStr) { return -1 }
-        else { return 0 }
-    })
 
-    console.log(sortedData)
+    let done = false;
 
-    return sortedData
+    while (!done) {
+        done = true;
+        for (let i = 1; i < carModel.length; i += 1) {
+            if (carModel[i - 1] > carModel[i]) {
+                done = false;
+                let tmp = carModel[i - 1];
+                carModel[i - 1] = carModel[i];
+                carModel[i] = tmp;
+            }
+        }
+    }
+
+
+    return carModel
 }
 
 
