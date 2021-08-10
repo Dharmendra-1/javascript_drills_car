@@ -1,9 +1,9 @@
-const problem1 = require('../problem1')
-const problem2 = require('../problem2')
-const problem3 = require('../problem3')
-const problem4 = require('../problem4')
-const problem5 = require('../problem5')
-const problem6 = require('../problem6')
+const problem1 = require('../problem/problem1')
+const problem2 = require('../problem/problem2')
+const problem3 = require('../problem/problem3')
+const problem4 = require('../problem/problem4')
+const problem5 = require('../problem/problem5')
+const problem6 = require('../problem/problem6')
 
 
 
@@ -68,15 +68,15 @@ problem1.findCar(inventory)
 problem2.lastCar(inventory)
 
 // The marketing team wants the car models listed alphabetically on the website. Execute a function to Sort all the car model names into alphabetical order and log the results in the console as it was returned.
-problem3.carModelSortASC(inventory)
+const carModelResult = problem3.carModelSortASC(inventory)
 
 // The accounting team needs all the years from every car on the lot. Execute a function that will return an array from the dealer data containing only the car years and log the result in the console as it was returned.
-problem4.carYear(inventory)
+const carYearResult = problem4.carYear(inventory)
 
 
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the array you just obtained from the previous problem, find out how many cars were made before the year 2000 and return the array of older cars and log its length.
-problem5.olderCar2000(inventory)
+const olderCarResult = problem5.olderCar2000(inventory)
 
 
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-problem6.bmwAndAudiCar(inventory)
+const bmwAudiResult = problem6.bmwAndAudiCar(inventory)
