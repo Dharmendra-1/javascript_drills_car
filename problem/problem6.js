@@ -9,9 +9,9 @@ const bmwAndAudiCar = (inventory) => {
         }
     }
 
-    console.log(bmwAudiCar)
+    console.log(JSON.stringify(bmwAudiCar))
 
-    return bmwAudiCar
+    return JSON.stringify(bmwAudiCar)
 }
 
 
