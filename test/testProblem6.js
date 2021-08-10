@@ -1,5 +1,5 @@
+const { inventory } = require('../data/inventory')
 const filePath = require('../problem/problem6')
-const { inventory } = require('./inventory')
 const problem = filePath.problem6
 
 
