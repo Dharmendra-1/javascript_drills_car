@@ -1,12 +1,3 @@
-const problem1 = require('../problem/problem1')
-const problem2 = require('../problem/problem2')
-const problem3 = require('../problem/problem3')
-const problem4 = require('../problem/problem4')
-const problem5 = require('../problem/problem5')
-const problem6 = require('../problem/problem6')
-
-
-
 let inventory = [{ "id": 1, "car_make": "Lincoln", "car_model": "Navigator", "car_year": 2009 },
 { "id": 2, "car_make": "Mazda", "car_model": "Miata MX-5", "car_year": 2001 },
 { "id": 3, "car_make": "Land Rover", "car_model": "Defender Ice Edition", "car_year": 2010 },
@@ -60,23 +51,6 @@ let inventory = [{ "id": 1, "car_make": "Lincoln", "car_model": "Navigator", "ca
 
 
 
-// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by calling a function that will return the data for that car. Then log the car's year, make, and model in the console log in the format of: 
-problem1.findCar(inventory)
 
+module.exports = { inventory }
 
-// The dealer needs the information on the last car in their inventory. Execute a function to find what the make and model of the last car in the inventory is?  Log the make and model into the console in the format of: 
-problem2.lastCar(inventory)
-
-// The marketing team wants the car models listed alphabetically on the website. Execute a function to Sort all the car model names into alphabetical order and log the results in the console as it was returned.
-const carModelResult = problem3.carModelSortASC(inventory)
-
-// The accounting team needs all the years from every car on the lot. Execute a function that will return an array from the dealer data containing only the car years and log the result in the console as it was returned.
-const carYearResult = problem4.carYear(inventory)
-
-
-// The car lot manager needs to find out how many cars are older than the year 2000. Using the array you just obtained from the previous problem, find out how many cars were made before the year 2000 and return the array of older cars and log its length.
-const olderCarResult = problem5.olderCar2000(inventory)
-
-
-// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-const bmwAudiResult = problem6.bmwAndAudiCar(inventory)

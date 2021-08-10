@@ -1,5 +1,5 @@
 
-const bmwAndAudiCar = (inventory) => {
+const problem6 = (inventory) => {
     let bmwAudiCar = []
 
     for (let index = 0; index < inventory.length; index++) {
@@ -9,10 +9,9 @@ const bmwAndAudiCar = (inventory) => {
         }
     }
 
-    console.log(JSON.stringify(bmwAudiCar))
 
     return JSON.stringify(bmwAudiCar)
 }
 
 
-module.exports = { bmwAndAudiCar }
+module.exports = { problem6 }

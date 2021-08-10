@@ -1,5 +1,5 @@
 
-function carModelSortASC(inventory) {
+const problem3 = (inventory) => {
 
     const carModel = []
 
@@ -20,4 +20,4 @@ function carModelSortASC(inventory) {
 }
 
 
-module.exports = { carModelSortASC }
+module.exports = { problem3 }

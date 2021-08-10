@@ -1,5 +1,5 @@
 
-const olderCar2000 = (inventory) => {
+const problem5 = (inventory) => {
     let oldCar = []
 
     for (let index = 0; index < inventory.length; index++) {
@@ -9,9 +9,8 @@ const olderCar2000 = (inventory) => {
         }
     }
 
-    console.log(oldCar.length)
 
     return oldCar
 }
 
-module.exports = { olderCar2000 }
+module.exports = { problem5 }

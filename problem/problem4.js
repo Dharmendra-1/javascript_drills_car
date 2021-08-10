@@ -1,5 +1,5 @@
 
-const carYear = (inventory) => {
+const problem4 = (inventory) => {
     let allCarYear = []
 
     for (let index = 0; index < inventory.length; index++) {
@@ -14,9 +14,8 @@ const carYear = (inventory) => {
         else { return 0 }
     })
 
-    console.log(sortedData)
     return sortedData
 }
 
 
-module.exports = { carYear }
+module.exports = { problem4 }
