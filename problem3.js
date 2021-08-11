@@ -12,12 +12,19 @@ const problem3 = (inventory) => {
     let done = false;
 
     while (!done) {
+
         done = true;
+
         for (let i = 1; i < carModel.length; i += 1) {
+
             if (carModel[i - 1] > carModel[i]) {
+
                 done = false;
+
                 let tmp = carModel[i - 1];
+
                 carModel[i - 1] = carModel[i];
+
                 carModel[i] = tmp;
             }
         }
