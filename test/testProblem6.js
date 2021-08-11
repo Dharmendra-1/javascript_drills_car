@@ -6,3 +6,4 @@ const problem = filePath.problem6
 const result = problem(inventory)
 
 console.log(result)
+

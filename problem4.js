@@ -3,6 +3,12 @@ const problem4 = (inventory) => {
 
     let allCarYear = []
 
+    if (inventory.length === 0) {
+
+        return allCarYear
+
+    }
+
     for (let index = 0; index < inventory.length; index++) {
 
         let year = inventory[index].car_year

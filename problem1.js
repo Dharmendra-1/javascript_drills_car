@@ -1,6 +1,13 @@
 
 const problem1 = (inventory) => {
 
+    if (inventory.length === 0) {
+
+        return []
+
+    }
+
+
     for (let index = 0; index < inventory.length; index++) {
 
         let carInfo = inventory[index]

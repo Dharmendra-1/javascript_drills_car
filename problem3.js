@@ -3,6 +3,13 @@ const problem3 = (inventory) => {
 
     const carModel = []
 
+    if (inventory.length === 0) {
+
+        return carModel
+
+    }
+
+
     for (let index = 0; index < inventory.length; index++) {
         let model = inventory[index].car_model
         carModel.push(model)
