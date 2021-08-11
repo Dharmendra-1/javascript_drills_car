@@ -1,5 +1,6 @@
 
 const problem5 = (inventory) => {
+
     let oldCar = []
 
     for (let index = 0; index < inventory.length; index++) {

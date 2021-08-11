@@ -4,4 +4,4 @@ const problem = filePath.problem5
 
 const result = problem(inventory)
 
-console.log(result)
+console.log(result.length)
